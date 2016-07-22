@@ -1,0 +1,31 @@
+{
+  "name": "gulp-rev-append-all",
+  "version": "0.1.6",
+  "description": "base on gulp-rev-append that replace \"?rev=@@hash\" with hash string and gulp-rev-append-all will not but append a hash string like \"?v=xxx\" to the end of ref in file.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node node_modules/.bin/cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OuIChien/gulp-rev-append-all.git"
+  },
+  "keywords": [
+    "gulp",
+    "gulp-rev-append",
+    "gulp-rev-append-all",
+    "gulpplugin",
+    "revision"
+  ],
+  "author": "GaryOu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OuIChien/gulp-rev-append-all/issues"
+  },
+  "homepage": "https://github.com/OuIChien/gulp-rev-append-all#readme"
+}
