@@ -30,7 +30,7 @@ var revPlugin = function revPlugin() {
       throw new PluginError('gulp-rev-append', 'Missing file.contents required for modifying files using gulp-rev-append.');
     }
 
-    isNgRoute = file.path.indexOf('/app.js')
+    isNgRoute = file.path.indexOf('/app.js') > -1;
 
     contents = file.contents.toString();
     lines = contents.split('\n');
@@ -43,8 +43,6 @@ var revPlugin = function revPlugin() {
 
       for(i = 0; i < result.length; i++) {
         groups = FILE_DECL.exec(result[i]);
-
-        console.log(groups);
 
         if(groups && groups.length > 1) {
           // are we an "absoulte path"? (e.g. /js/app.js)
@@ -77,8 +75,6 @@ var revPlugin = function revPlugin() {
       for(i = 0; i < length; i++) {
         line = lines[i];
         groups = FILE_DECL.exec(line);
-
-        console.log(groups.length);
 
         if(groups && groups.length > 1) {
           // are we an "absoulte path"? (e.g. /js/app.js)
