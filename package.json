@@ -1,6 +1,6 @@
 {
   "name": "gulp-rev-append-all",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "base on gulp-rev-append that replace \"?rev=@@hash\" with hash string and gulp-rev-append-all will not but append a hash string like \"?v=xxx\" to the end of ref in file.",
   "main": "index.js",
   "directories": {
