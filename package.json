@@ -1,13 +1,15 @@
 {
   "name": "gulp-rev-append-all-srcset",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "base on gulp-rev-append that replace \"?rev=@@hash\" with hash string and gulp-rev-append-all-srcset will not but append a hash string like \"?v=xxx\" to the end of ref in file.",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "event-stream": "^4.0.1",
+    "gulp-util": "^2.2.20"
+  },
   "scripts": {
     "test": "node node_modules/.bin/cucumber-js"
   },
