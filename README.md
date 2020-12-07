@@ -1,4 +1,4 @@
-gulp-rev-append-all
+gulp-rev-append-all-srcset
 ---
 > gulp plugin for cache-busting files using query string file hash
 
@@ -7,14 +7,14 @@ gulp-rev-append-all
 installation
 ---
 ```
-$ npm install gulp-rev-append-all --save-dev
+$ npm install gulp-rev-append-all-srcset --save-dev
 ```
 
 how?
 ---
 _gulpfile.js_
 ```
-var rev = require('gulp-rev-append-all');
+var rev = require('gulp-rev-append-all-srcset');
 
 gulp.task('rev', function() {
   gulp.src('./index.html')
@@ -31,7 +31,7 @@ $ gulp rev
 
 what?
 ---
-The [gulp-rev-append-all] is base on [gulp-rev-append](https://github.com/bustardcelly/gulp-rev-append) plugins allows for appending a query-string file hash to dependencies declared in html files defined using the following regex: `(?:href=|src=|url\()['|"]([^\s>"']+?)['|"]`
+The [gulp-rev-append-all-srcset] is base on [gulp-rev-append](https://github.com/bustardcelly/gulp-rev-append) plugins allows for appending a query-string file hash to dependencies declared in html files defined using the following regex: `(?:href=|src=|url\()['|"]([^\s>"']+?)['|"]`
 
 That's fancy talk for any stylesheet or script declarations that are declared in an html file such as the following:
 
@@ -50,7 +50,7 @@ That's fancy talk for any stylesheet or script declarations that are declared in
 </html>
 ```
 
-will turn into something similar as the following after running `gulp-rev-append-all`:
+will turn into something similar as the following after running `gulp-rev-append-all-srcset`:
 ```
 <!doctype html>
 <html>
